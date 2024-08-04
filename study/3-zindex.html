@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>z-index</title>
+  <style>
+    div{border : 3px solid black; height: 100px; width: 100px;}
+    #box1{
+      background-color: aquamarine;
+      z-index: 10;
+    }
+    #box2{
+      background-color: orange;
+      margin-top: -30px;
+      margin-left: 20px;
+      z-index: 5;
+    }
+    #box3{
+      background-color: aquamarine;
+      position: relative;
+      z-index: 10;
+    }
+    #box4{
+      background-color: orange;
+      position: relative;
+      z-index: 5;
+      margin-top: -20px;
+      margin-left: 30px;
+    }
+    #box5{
+      background-color: aquamarine;
+    }
+    #box6{
+      background-color: orange;
+      margin-top: -20px;
+      margin-left: 30px;
+      position: relative;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div id="box1">BOX1</div>
+  <div id="box2">BOX2</div>
+  <hr>
+  <div id="box3">BOX3</div>  
+  <div id="box4">BOX4</div>
+  <hr>
+  <div id="box5">BOX5</div>  
+  <div id="box6">BOX6</div>
+</body>
+</html>

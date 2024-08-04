@@ -1,0 +1,54 @@
+/* 모든 페이지에서 공통으로 사용되는 디자인 */
+
+@import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+
+/* font-family: "Orbit", sans-serif; Orbit 폰트 사용시 */
+/* font-family: "IBM Plex Sans KR", sans-serif; IBM Plex 폰트 사용시 */
+
+/* 기본적으로 모든 요소들에서 IBM 글꼴 적용 */
+* {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.err {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+button{
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+  color: #888888;
+}
+
+ul, li{
+  list-style: none;
+}
+
+.effect-button{
+  background-color: #e8e8e8;
+  padding: 5px 10px;
+  border-radius: 12px;
+  border: 3px solid black;
+  box-shadow: 0px 3px black;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.effect-button:hover{
+  box-shadow: 0 4px black;
+  transform: translateY(-1px);
+}
+
+.effect-button:active{
+  box-shadow: none;
+  transform: translateY(3px   );
+}
